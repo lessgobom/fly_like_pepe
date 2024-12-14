@@ -33,6 +33,19 @@
             margin-top: 10px;
         }
 
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 40px;
+            }
+        }
+
         .main-image {
             margin: 30px auto;
             display: block;
@@ -82,76 +95,4 @@
             padding: 20px 40px;
             border: 4px solid #00FF00;
             font-size: 24px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            text-transform: uppercase;
-            transition: all 0.3s;
-        }
-
-        .button:hover {
-            background-color: #00FF00;
-            color: #000;
-        }
-
-        footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #00FF00;
-            padding: 20px 0;
-            border-top: 4px solid #00FF00;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        @font-face {
-            font-family: "Joystix Monospace";
-            src: url("https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/joystix%20monospace.otf") format("opentype");
-        }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const image = document.querySelector(".main-image");
-            image.addEventListener("click", () => {
-                const randomX = Math.random() * 400 - 200; // Random position between -200 and 200
-                const randomY = Math.random() * 200 - 100; // Random position between -100 and 100
-                image.style.transform = `translate(${randomX}px, ${randomY}px)`;
-            });
-        });
-    </script>
-</head>
-<body>
-    <header>
-        <h1>#FlyLikePEPE</h1>
-        <p>Get High Like Planes...</p>
-    </header>
-
-    <main>
-        <img src="https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/pepe_transp.png" alt="#FlyLikePEPE" class="main-image">
-
-        <div class="audio-player">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/fly_like_pepe.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
-        <div class="content">
-            <h2>What is #FlyLikePEPE?</h2>
-            <p>#FlyLikePEPE is the ultimate memecoin that blends fun, community, and cosmic vibes! With Pepe as your astronaut, we aim to bring memes to the moon and beyond.</p>
-
-            <h2>How to Join the Fun?</h2>
-            <p>Buy $FlyLikePepe at pumpfun, join our discord, post TikToks and most important importantly - Let’s fly to the moon!</p>
-
-            <a href="#" class="button">Buy $FLP Now</a>
-        </div>
-    </main>
-
-    <footer>
-        <p>Made with love by the #FlyLikePEPE Community ✨</p>
-    </footer>
-</body>
-</html>
+            text-decoration: no
