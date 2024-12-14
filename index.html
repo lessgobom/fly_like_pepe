@@ -24,11 +24,11 @@
 
         header h1 {
             margin: 0;
-            font-size: 8vw; /* Responsive font size based on viewport width */
+            font-size: clamp(40px, 8vw, 80px);
             text-shadow: 4px 4px #00AA00;
-            white-space: nowrap; /* Prevents text from wrapping to the next line */
-            overflow: hidden; /* Ensures content doesn't overflow its container */
-            text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         header p {
@@ -98,6 +98,22 @@
             color: #000;
         }
 
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #00FF00;
+            text-decoration: none;
+            font-size: clamp(14px, 3vw, 20px);
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #00AA00;
+        }
+
         footer {
             background-color: rgba(0, 0, 0, 0.8);
             color: #00FF00;
@@ -120,8 +136,8 @@
         document.addEventListener("DOMContentLoaded", () => {
             const image = document.querySelector(".main-image");
             image.addEventListener("click", () => {
-                const randomX = Math.random() * 40 - 20; // Random position between -20% and 20%
-                const randomY = Math.random() * 20 - 10; // Random position between -10% and 10%
+                const randomX = Math.random() * 40 - 20;
+                const randomY = Math.random() * 20 - 10;
                 image.style.transform = `translate(${randomX}%, ${randomY}%)`;
             });
         });
@@ -148,14 +164,17 @@
             <p>#FlyLikePEPE is the ultimate memecoin that blends fun, community, and cosmic vibes! With Pepe as your astronaut, we aim to bring memes to the moon and beyond.</p>
 
             <h2>How to Join the Fun?</h2>
-            <p>Buy $FlyLikePepe at pumpfun, join our discord, post TikToks and most importantly - Let’s fly to the moon!</p>
+            <p>Buy $FlyLikePEPE at pumpfun, join our Discord, post TikToks, and most importantly – let’s fly to the moon!</p>
 
-            <a href="#" class="button">Buy $FLP Now</a>
+            <a href="#" class="button">Buy $FlyLikePEPE</a>
+
+            <div class="social-links">
+                <a href="https://discord.gg/MtqKQSVByh" target="_blank">Join our Discord</a> |
+                <a href="https://x.com/FlyLikePEPE" target="_blank">Follow us on Twitter</a>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>Made with love by the #FlyLikePEPE Community ✨</p>
-    </footer>
-</body>
-</html>
+    <
+::contentReference[oaicite:0]{index=0}
+ 
