@@ -24,10 +24,11 @@
 
         header h1 {
             margin: 0;
-            font-size: clamp(40px, 8vw, 80px);
+            font-size: 8vw; /* Responsive font size based on viewport width */
             text-shadow: 4px 4px #00AA00;
-            white-space: normal; /* Allows text to wrap */
-            word-wrap: break-word; /* Ensures long words break to fit within the container */
+            white-space: nowrap; /* Prevents text from wrapping to the next line */
+            overflow: hidden; /* Ensures content doesn't overflow its container */
+            text-overflow: ellipsis; /* Adds ellipsis if text overflows */
         }
 
         header p {
