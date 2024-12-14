@@ -43,6 +43,7 @@
             border: 4px solid #00FF00;
             padding: 10px;
             animation: move-left-right 7s infinite alternate ease-in-out;
+            cursor: pointer;
         }
 
         @keyframes move-left-right {
@@ -113,6 +114,16 @@
             src: url("https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/joystix%20monospace.otf") format("opentype");
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const image = document.querySelector(".main-image");
+            image.addEventListener("click", () => {
+                const randomX = Math.random() * 400 - 200; // Random position between -200 and 200
+                const randomY = Math.random() * 200 - 100; // Random position between -100 and 100
+                image.style.transform = `translate(${randomX}px, ${randomY}px)`;
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -137,7 +148,7 @@
             <h2>How to Join the Fun?</h2>
             <p>Buy $FlyLikePepe at pumpfun, join our discord, post TikToks and most important importantly - Let’s fly to the moon!</p>
 
-            <a href="#" class="button">Buy $FlyLikePEPE Now</a>
+            <a href="#" class="button">Buy $FLP Now</a>
         </div>
     </main>
 
