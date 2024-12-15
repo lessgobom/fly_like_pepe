@@ -82,16 +82,14 @@
 
         .button-container {
             display: flex;
-            justify-content: center; /* Center all buttons */
-            flex-wrap: wrap; /* Wrap buttons on smaller screens */
+            justify-content: center; /* Center-align buttons */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
             gap: 20px; /* Adds space between buttons */
-            margin-top: 30px; /* Adds top margin for better spacing */
+            margin-top: 30px; /* Adds spacing above */
         }
 
-        .button-container .middle-button {
-            flex-basis: 100%; /* Forces the middle button to span the full row */
-            text-align: center; /* Centers the button */
-            margin: 20px 0; /* Adds spacing around the middle button */
+        .button-container .button:nth-child(2) {
+            margin: 0 40px; /* Adds extra space around the middle button */
         }
 
         .button {
@@ -101,7 +99,6 @@
             border: 4px solid #00FF00;
             font-size: clamp(16px, 3.5vw, 24px);
             text-decoration: none;
-            display: inline-block;
             text-transform: uppercase;
             transition: all 0.3s;
         }
@@ -165,9 +162,7 @@
 
             <div class="button-container">
                 <a href="https://discord.gg/MtqKQSVByh" target="_blank" class="button">Join our Discord</a>
-                <div class="middle-button">
-                    <a href="#" class="button">Buy #FLP</a>
-                </div>
+                <a href="#" class="button">Buy #FLP</a>
                 <a href="https://x.com/FlyLikePEPE" target="_blank" class="button">Follow us on Twitter</a>
             </div>
         </div>
