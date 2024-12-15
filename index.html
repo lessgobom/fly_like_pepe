@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#FlyLikePEPE - Get high like planes...</title>
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/pepe_transp.png">
+    <title>#FLP - Fly Like PEPE</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/openart-image_b64Xtclr_1734136351565_raw.jpg">
     <style>
         body {
             font-family: "Joystix Monospace", monospace;
             background-color: #000;
+            background-size: cover;
             color: #00FF00;
             margin: 0;
             padding: 20px;
@@ -43,6 +44,7 @@
             max-width: 300px;
             height: auto;
             image-rendering: pixelated;
+            border: 4px solid #00FF00;
             padding: 10px;
             animation: move-left-right 7s infinite alternate ease-in-out;
             cursor: pointer;
@@ -82,14 +84,10 @@
 
         .button-container {
             display: flex;
-            justify-content: center; /* Center-align buttons */
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
-            gap: 20px; /* Adds space between buttons */
-            margin-top: 30px; /* Adds spacing above */
-        }
-
-        .button-container .button:nth-child(2) {
-            margin: 0 40px; /* Adds extra space around the middle button */
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
         .button {
@@ -101,6 +99,9 @@
             text-decoration: none;
             text-transform: uppercase;
             transition: all 0.3s;
+            flex: 1 1 auto;
+            max-width: 200px;
+            text-align: center;
         }
 
         .button:hover {
@@ -118,7 +119,7 @@
 
         footer p {
             margin: 0;
-            font-size: clamp(12px, 2.5vw, 18px);
+            font-size: 18px;
         }
 
         @font-face {
@@ -130,8 +131,8 @@
         document.addEventListener("DOMContentLoaded", () => {
             const image = document.querySelector(".main-image");
             image.addEventListener("click", () => {
-                const randomX = Math.random() * 40 - 20;
-                const randomY = Math.random() * 20 - 10;
+                const randomX = Math.random() * 40 - 20; // Random position between -20% and 20%
+                const randomY = Math.random() * 20 - 10; // Random position between -10% and 10%
                 image.style.transform = `translate(${randomX}%, ${randomY}%)`;
             });
         });
@@ -139,12 +140,12 @@
 </head>
 <body>
     <header>
-        <h1>#FlyLikePEPE</h1>
+        <h1>#FLP - Fly Like PEPE</h1>
         <p>Get High Like Planes...</p>
     </header>
 
     <main>
-        <img src="https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/pepe_transp.png" alt="#FlyLikePEPE" class="main-image">
+        <img src="https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/openart-image_b64Xtclr_1734136351565_raw.jpg" alt="FlyLikePEPE" class="main-image">
 
         <div class="audio-player">
             <audio controls>
@@ -154,22 +155,22 @@
         </div>
 
         <div class="content">
-            <h2>What is #FlyLikePEPE?</h2>
-            <p>#FlyLikePEPE is the ultimate Solana memecoin that blends fun, community, and cosmic vibes! With Pepe as your astronaut, we aim to bring memes to the moon and beyond.</p>
+            <h2>What is FlyLikePEPE?</h2>
+            <p>FlyLikePEPE is the ultimate Solana memecoin that blends fun, community, and cosmic vibes! With Pepe as your astronaut, we aim to bring memes to the moon and beyond.</p>
 
             <h2>How to Join the Fun?</h2>
-            <p>Buy #FLP at pumpfun, join our Discord, post TikToks, and most importantly – let’s fly to the moon!</p>
+            <p>Buy #FLP at pumpfun, join our Discord, post TikToks, and most importantly—let’s fly to the moon!</p>
 
             <div class="button-container">
+                <a href="https://pumpfun.com" class="button">Buy #FLP</a>
                 <a href="https://discord.gg/MtqKQSVByh" target="_blank" class="button">Join our Discord</a>
-                <a href="#" class="button">Buy #FLP</a>
                 <a href="https://x.com/FlyLikePEPE" target="_blank" class="button">Follow us on Twitter</a>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>Made with love by the #FlyLikePEPE Community ✨</p>
+        <p>Made with love by the FlyLikePEPE Community ✨</p>
     </footer>
 </body>
 </html>
