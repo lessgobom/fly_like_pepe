@@ -80,6 +80,14 @@
             margin: 20px 0;
         }
 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
         .button {
             background-color: #000;
             color: #00FF00;
@@ -88,7 +96,6 @@
             font-size: clamp(16px, 3.5vw, 24px);
             text-decoration: none;
             display: inline-block;
-            margin: 10px 5px;
             text-transform: uppercase;
             transition: all 0.3s;
         }
@@ -96,10 +103,6 @@
         .button:hover {
             background-color: #00FF00;
             color: #000;
-        }
-
-        .social-buttons {
-            margin-top: 20px;
         }
 
         footer {
@@ -154,9 +157,8 @@
             <h2>How to Join the Fun?</h2>
             <p>Buy #FLP at pumpfun, join our Discord, post TikToks, and most importantly – let’s fly to the moon!</p>
 
-            <a href="#" class="button">Buy #FLP</a>
-
-            <div class="social-buttons">
+            <div class="button-container">
+                <a href="#" class="button">Buy #FLP</a>
                 <a href="https://discord.gg/MtqKQSVByh" target="_blank" class="button">Join our Discord</a>
                 <a href="https://x.com/FlyLikePEPE" target="_blank" class="button">Follow us on Twitter</a>
             </div>
