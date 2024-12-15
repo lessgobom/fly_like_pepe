@@ -44,8 +44,6 @@
             max-width: 300px;
             height: auto;
             image-rendering: pixelated;
-            border: none;
-            padding: 10px;
             animation: move-left-right 7s infinite alternate ease-in-out;
             cursor: pointer;
         }
@@ -84,9 +82,9 @@
 
         .button-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
-            flex-wrap: wrap;
             margin-top: 20px;
         }
 
@@ -99,7 +97,6 @@
             text-decoration: none;
             text-transform: uppercase;
             transition: all 0.3s;
-            flex: 1 1 auto;
             max-width: 200px;
             text-align: center;
         }
@@ -109,9 +106,8 @@
             color: #000;
         }
 
-        .streing-text {
-            color: #00FF00;
-            font-size: clamp(14px, 3vw, 22px);
+        .disclaimer {
+            font-size: clamp(12px, 2.5vw, 18px);
             margin-top: 10px;
         }
 
@@ -151,7 +147,7 @@
     </header>
 
     <main>
-        <img src="https://github.com/lessgobom/fly_like_pepe/blob/main/pepe_transp.png" alt="FlyLikePEPE" class="main-image">
+        <img src="https://raw.githubusercontent.com/lessgobom/fly_like_pepe/main/pepe_transp.png" alt="FlyLikePEPE" class="main-image">
 
         <div class="audio-player">
             <audio controls>
@@ -168,16 +164,12 @@
             <p>Buy #FLP at pumpfun, join our Discord, post TikToks, and most importantly—let’s fly to the moon!</p>
 
             <div class="button-container">
-                <a href="https://discord.gg/MtqKQSVByh" target="_blank" class="button">Join our Discord</a>
                 <a href="https://pumpfun.com" class="button">Buy #FLP</a>
+                <p class="disclaimer">Streing CA: la;skdjf;lasdkjfasdf</p>
+                <a href="https://discord.gg/MtqKQSVByh" target="_blank" class="button">Join our Discord</a>
                 <a href="https://x.com/FlyLikePEPE" target="_blank" class="button">Follow us on Twitter</a>
             </div>
-            <p class="streing-text">Streing CA: la;skdjf;lasdkjfasdf</p>
         </div>
-    </main>
-
-    <footer>
-        <p>Made with love by the FlyLikePEPE Community ✨</p>
-    </footer>
-</body>
-</html>
+    </
+::contentReference[oaicite:0]{index=0}
+ 
