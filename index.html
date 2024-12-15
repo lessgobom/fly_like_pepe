@@ -82,10 +82,16 @@
 
         .button-container {
             display: flex;
-            justify-content: space-around; /* Distributes buttons evenly */
-            flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+            justify-content: center; /* Center all buttons */
+            flex-wrap: wrap; /* Wrap buttons on smaller screens */
             gap: 20px; /* Adds space between buttons */
             margin-top: 30px; /* Adds top margin for better spacing */
+        }
+
+        .button-container .middle-button {
+            flex-basis: 100%; /* Forces the middle button to span the full row */
+            text-align: center; /* Centers the button */
+            margin: 20px 0; /* Adds spacing around the middle button */
         }
 
         .button {
@@ -158,8 +164,10 @@
             <p>Buy #FLP at pumpfun, join our Discord, post TikToks, and most importantly – let’s fly to the moon!</p>
 
             <div class="button-container">
-                <a href="#" class="button">Buy #FLP</a>
                 <a href="https://discord.gg/MtqKQSVByh" target="_blank" class="button">Join our Discord</a>
+                <div class="middle-button">
+                    <a href="#" class="button">Buy #FLP</a>
+                </div>
                 <a href="https://x.com/FlyLikePEPE" target="_blank" class="button">Follow us on Twitter</a>
             </div>
         </div>
